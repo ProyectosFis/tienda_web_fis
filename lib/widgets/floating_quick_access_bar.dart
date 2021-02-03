@@ -2,7 +2,7 @@ import 'package:tienda_web_fis/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 
 class FloatingQuickAccessBar extends StatefulWidget {
-  const FloatingQuickAccessBar({
+  const   FloatingQuickAccessBar({
     Key key,
     @required this.screenSize,
   }) : super(key: key);
@@ -17,12 +17,11 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
   List _isHovering = [false, false, false, false];
   List<Widget> rowElements = [];
 
-  List<String> items = ['Destination', 'Dates', 'People', 'Experience'];
+  List<String> items = ['Pedidos', 'Mis compras', 'Direcciones'];
   List<IconData> icons = [
     Icons.location_on,
     Icons.date_range,
-    Icons.people,
-    Icons.wb_sunny
+    Icons.people
   ];
 
   List<Widget> generateRowElements() {

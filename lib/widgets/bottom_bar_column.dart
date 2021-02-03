@@ -4,13 +4,11 @@ class BottomBarColumn extends StatelessWidget {
   final String heading;
   final String s1;
   final String s2;
-  final String s3;
 
   BottomBarColumn({
     this.heading,
     this.s1,
     this.s2,
-    this.s3,
   });
 
   @override
@@ -46,14 +44,7 @@ class BottomBarColumn extends StatelessWidget {
               fontSize: 14,
             ),
           ),
-          SizedBox(height: 5),
-          Text(
-            s3,
-            style: TextStyle(
-              color: Colors.blueGrey[100],
-              fontSize: 14,
-            ),
-          ),
+
         ],
       ),
     );
