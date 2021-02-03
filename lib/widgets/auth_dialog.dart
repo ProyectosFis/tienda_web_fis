@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tienda_web_fis/screens/home_page.dart';
 import 'package:tienda_web_fis/utils/authentication.dart';
 
-import 'google_sign_in_button.dart';
+// import 'google_sign_in_button.dart';
 
 class AuthDialog extends StatefulWidget {
   @override
@@ -83,7 +83,7 @@ class _AuthDialogState extends State<AuthDialog> {
               children: [
                 Center(
                   child: Text(
-                    'EXPLORE',
+                    'Ingresa',
                     style: TextStyle(
                       color: Theme.of(context).textTheme.headline1.color,
                       fontSize: 24,
@@ -100,7 +100,7 @@ class _AuthDialogState extends State<AuthDialog> {
                     bottom: 8,
                   ),
                   child: Text(
-                    'Email address',
+                    'Email',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                       color: Theme.of(context).textTheme.subtitle2.color,
@@ -145,7 +145,7 @@ class _AuthDialogState extends State<AuthDialog> {
                       hintStyle: new TextStyle(
                         color: Colors.blueGrey[300],
                       ),
-                      hintText: "Email",
+                      hintText: "correo@example.com",
                       fillColor: Colors.white,
                       errorText: _isEditingEmail
                           ? _validateEmail(textControllerEmail.text)
@@ -164,7 +164,7 @@ class _AuthDialogState extends State<AuthDialog> {
                     bottom: 8,
                   ),
                   child: Text(
-                    'Password',
+                    'Contraseña',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                       color: Theme.of(context).textTheme.subtitle2.color,
@@ -209,7 +209,7 @@ class _AuthDialogState extends State<AuthDialog> {
                       hintStyle: new TextStyle(
                         color: Colors.blueGrey[300],
                       ),
-                      hintText: "Password",
+                      hintText: "**********",
                       fillColor: Colors.white,
                       errorText: _isEditingPassword
                           ? _validatePassword(textControllerPassword.text)
@@ -254,7 +254,7 @@ class _AuthDialogState extends State<AuthDialog> {
                                     print(result);
                                     setState(() {
                                       loginStatus =
-                                          'You have successfully logged in';
+                                          'Ingresaste correctamente';
                                       loginStringColor = Colors.green;
                                     });
                                     Future.delayed(Duration(milliseconds: 500),
@@ -271,13 +271,13 @@ class _AuthDialogState extends State<AuthDialog> {
                                   print('Login Error: $error');
                                   setState(() {
                                     loginStatus =
-                                        'Error occured while logging in';
+                                        'Error durante el inicio de sesión';
                                     loginStringColor = Colors.red;
                                   });
                                 });
                               } else {
                                 setState(() {
-                                  loginStatus = 'Please enter email & password';
+                                  loginStatus = 'Por favor, ingrese su email y su contaseña';
                                   loginStringColor = Colors.red;
                                 });
                               }
@@ -310,7 +310,7 @@ class _AuthDialogState extends State<AuthDialog> {
                                       ),
                                     )
                                   : Text(
-                                      'Log in',
+                                      'Iniciar sesión',
                                       style: TextStyle(
                                         fontSize: 14,
                                         color: Colors.white,
@@ -349,7 +349,7 @@ class _AuthDialogState extends State<AuthDialog> {
                                   if (result != null) {
                                     setState(() {
                                       loginStatus =
-                                          'You have registered successfully';
+                                          'Te registraste correctamente';
                                       loginStringColor = Colors.green;
                                     });
                                     print(result);
@@ -358,13 +358,13 @@ class _AuthDialogState extends State<AuthDialog> {
                                   print('Registration Error: $error');
                                   setState(() {
                                     loginStatus =
-                                        'Error occured while registering';
+                                        'Hubo un error durante el registro';
                                     loginStringColor = Colors.red;
                                   });
                                 });
                               } else {
                                 setState(() {
-                                  loginStatus = 'Please enter email & password';
+                                  loginStatus = 'Por favor, ingrese su email y su contaseña';
                                   loginStringColor = Colors.red;
                                 });
                               }
@@ -398,7 +398,7 @@ class _AuthDialogState extends State<AuthDialog> {
                                       ),
                                     )
                                   : Text(
-                                      'Sign up',
+                                      'Regístrate',
                                       style: TextStyle(
                                         fontSize: 14,
                                         color: Colors.white,
@@ -440,12 +440,10 @@ class _AuthDialogState extends State<AuthDialog> {
                   ),
                 ),
                 SizedBox(height: 30),
-                Center(child: GoogleButton()),
-                SizedBox(height: 30),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'By proceeding, you agree to our Terms of Use and confirm you have read our Privacy Policy.',
+                    'Al continuar, acepta nuestros Términos de uso y confirma que ha leído nuestra Política de privacidad.',
                     maxLines: 2,
                     style: TextStyle(
                       color: Theme.of(context).textTheme.subtitle2.color,
