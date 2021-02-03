@@ -3,13 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "848071d505bb07d3a8139b09ae200103",
+  "assets/AssetManifest.json": "750325dc3501e3a2b933d305f927e7d4",
 "assets/assets/images/arroz.jpg": "ec1059df0037a3e1d7570da837c52f15",
 "assets/assets/images/aseo.jpg": "22a585cc2109aca055a9e222c36a8772",
 "assets/assets/images/atun.jpg": "ea917cdd61cfd558c9adc5e8c58d2e40",
 "assets/assets/images/carnes.jpg": "941370f40df6773af7a59c71edc98afb",
 "assets/assets/images/congelados.jpg": "35e2a3d3d0480742edc8042db83ca5ce",
-"assets/assets/images/cover.jpg": "f0067e5854985f0f5e24b8c13bd0e582",
+"assets/assets/images/cover_home.jpg": "f0067e5854985f0f5e24b8c13bd0e582",
 "assets/assets/images/google_logo.png": "b75aecaf9e70a9b1760497e33bcd6db1",
 "assets/assets/images/north_america.jpg": "867d729d34a03bf38136bd45954ec218",
 "assets/assets/images/panaderia.jpg": "aeedaca79825e0d3f8f79dec48d54f19",
@@ -25,9 +25,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "501059a86c320087784a538028b25298",
-"/": "501059a86c320087784a538028b25298",
-"main.dart.js": "5cb00702b34c68f1f4df1f390beef7a4",
+"index.html": "74b1e92209c76b763e2fbcb0c28ab5bd",
+"/": "74b1e92209c76b763e2fbcb0c28ab5bd",
+"main.dart.js": "9ba5d3ca7e8f0d70dfff697b0883056a",
 "manifest.json": "ef3c621b53c187753d349b2feca91809",
 "version.json": "22f6d818dd96e669fe6a6503343890c8"
 };

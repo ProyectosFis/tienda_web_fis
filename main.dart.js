@@ -58629,7 +58629,7 @@ j=P.aP(C.C.aL(76.5),96,125,139)
 s=p.d
 r=t.i
 q=t.Y
-return new M.uz(!0,n,new A.vz(E.a8X(T.dn(H.c([T.ka(C.bY,H.c([M.aU(o,T.b_(U.Sa("assets/images/cover.jpg",C.ff),k*0.45,m.a),C.k,o,o,o,o,o,o,o,o,o,o),T.dn(H.c([new V.rC(m,o),M.aU(o,T.dn(H.c([new Q.AC(m,o),new U.AD(m,H.c(["assets/images/saltinas.jpg","assets/images/atun.jpg","assets/images/arroz.jpg"],r),H.c(["Galletas saltinas","Atun Van Camps","Arroz Diana"],r),o)],q),C.T,C.P,C.L),C.k,o,o,o,o,o,o,o,o,o,o)],q),C.T,C.P,C.L)],q),C.bU),new Z.A2(m,o),new X.r5(o),T.b_(o,k/10,o),new U.zc(o)],q),C.T,C.P,C.L),s,new L.qR(o),C.q),s,0.3,10,C.b5,j,o),new U.rt(o),l,o)}}
+return new M.uz(!0,n,new A.vz(E.a8X(T.dn(H.c([T.ka(C.bY,H.c([M.aU(o,T.b_(U.Sa("assets/images/cover_home.jpg",C.ff),k*0.45,m.a),C.k,o,o,o,o,o,o,o,o,o,o),T.dn(H.c([new V.rC(m,o),M.aU(o,T.dn(H.c([new Q.AC(m,o),new U.AD(m,H.c(["assets/images/saltinas.jpg","assets/images/atun.jpg","assets/images/arroz.jpg"],r),H.c(["Galletas saltinas","Atun Van Camps","Arroz Diana"],r),o)],q),C.T,C.P,C.L),C.k,o,o,o,o,o,o,o,o,o,o)],q),C.T,C.P,C.L)],q),C.bU),new Z.A2(m,o),new X.r5(o),T.b_(o,k/10,o),new U.zc(o)],q),C.T,C.P,C.L),s,new L.qR(o),C.q),s,0.3,10,C.b5,j,o),new U.rt(o),l,o)}}
 X.a2l.prototype={
 $0:function(){var s=this.a,r=C.b.gbf(s.d.d).y
 r.toString
