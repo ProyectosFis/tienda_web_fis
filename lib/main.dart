@@ -1,88 +1,88 @@
-import 'package:flutter/cupertino.dart';
+import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:tienda_web_fis/utils/authentication.dart';
+
+import 'screens/home_page.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Explore',
-      theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: HomePage(),
-    );
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  Future getUserInfo() async {
+    await getUser();
+    setState(() {});
+    print(uid);
   }
-}
 
-class HomePage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
-}
+  void initState() {
+    getUserInfo();
+    super.initState();
+  }
 
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    var screenSize = MediaQuery.of(context).size;
-
-    return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size(screenSize.width, 1000),
-        child: Container(
-          color: Colors.blue,
-          child: Padding(
-            padding: EdgeInsets.all(20),
-            child: Row(
-              children: [
-                Text('EXPLORE'),
-                Expanded(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      InkWell(
-                        onTap: () {},
-                        child: Text(
-                          'Discover',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ),
-                      SizedBox(width: screenSize.width / 20),
-                      InkWell(
-                        onTap: () {},
-                        child: Text(
-                          'Contact Us',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ),
-                    ],
+    return DynamicTheme(
+      defaultBrightness: Brightness.light,
+      data: (brightness) {
+        return brightness == Brightness.light
+            ? ThemeData(
+                primarySwatch: Colors.blueGrey,
+                backgroundColor: Colors.white,
+                cardColor: Colors.blueGrey[50],
+                primaryTextTheme: TextTheme(
+                  button: TextStyle(
+                    color: Colors.blueGrey,
+                    decorationColor: Colors.blueGrey[300],
+                  ),
+                  subtitle2: TextStyle(
+                    color: Colors.blueGrey[900],
+                  ),
+                  subtitle1: TextStyle(
+                    color: Colors.black,
+                  ),
+                  headline1: TextStyle(color: Colors.blueGrey[800]),
+                ),
+                bottomAppBarColor: Colors.blueGrey[900],
+                iconTheme: IconThemeData(color: Colors.blueGrey),
+                brightness: brightness,
+              )
+            : ThemeData(
+                primarySwatch: Colors.blueGrey,
+                backgroundColor: Colors.blueGrey[900],
+                cardColor: Colors.black,
+                primaryTextTheme: TextTheme(
+                  button: TextStyle(
+                    color: Colors.blueGrey[200],
+                    decorationColor: Colors.blueGrey[50],
+                  ),
+                  subtitle2: TextStyle(
+                    color: Colors.white,
+                  ),
+                  subtitle1: TextStyle(
+                    color: Colors.blueGrey[300],
+                  ),
+                  headline1: TextStyle(
+                    color: Colors.white70,
                   ),
                 ),
-                InkWell(
-                  onTap: () {},
-                  child: Text(
-                    'Sign Up',
-                    style: TextStyle(color: Colors.black),
-                  ),
-                ),
-                SizedBox(
-                  width: screenSize.width / 50,
-                ),
-                InkWell(
-                  onTap: () {},
-                  child: Text(
-                    'Login',
-                    style: TextStyle(color: Colors.black),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
+                bottomAppBarColor: Colors.black,
+                iconTheme: IconThemeData(color: Colors.blueGrey[200]),
+                brightness: brightness,
+              );
+      },
+      themedWidgetBuilder: (context, data) => MaterialApp(
+        title: 'Explore',
+        theme: data,
+        debugShowCheckedModeBanner: false,
+        home: HomePage(),
       ),
-      body: Container(),
     );
   }
 }
