@@ -78,7 +78,7 @@ class _MyAppState extends State<MyApp> {
               );
       },
       themedWidgetBuilder: (context, data) => MaterialApp(
-        title: 'Explore',
+        title: 'Home',
         theme: data,
         debugShowCheckedModeBanner: false,
         home: HomePage(),

@@ -14,7 +14,7 @@ class FloatingQuickAccessBar extends StatefulWidget {
 }
 
 class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
-  List _isHovering = [false, false, false, false];
+  List _isHovering = [false, false, false];
   List<Widget> rowElements = [];
 
   List<String> items = ['Pedidos', 'Mis compras', 'Direcciones'];
