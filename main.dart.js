@@ -58601,7 +58601,7 @@ q=X.ZY(s,C.o,a,C.o,new T.dO(C.t.h(0,200),o,o),C.b5,q)
 s=q}return s},
 $S:364}
 F.a3a.prototype={
-$2:function(a,b){return new S.lx(new X.h8(null),"Explore",b,!1,null)},
+$2:function(a,b){return new S.lx(new X.h8(null),"Home",b,!1,null)},
 $C:"$2",
 $R:2,
 $S:365}
@@ -58987,7 +58987,7 @@ $1:function(a){var s=null,r=this.a,q=r.c,p=q.a
 return T.dn(H.c([T.b_(T.a85(K.e4(5),U.Sa(r.d[a],C.ff)),p/6,p/3.8),new T.aS(new V.aa(0,q.b/70,0,0),L.aT(r.e[a],s,s,s,A.az(s,s,K.a9(this.b).a5.r.b,s,s,s,s,s,"Montserrat",s,s,16,s,C.aM,s,s,!0,s,s,s,s,s,s),s),s)],t.Y),C.T,C.P,C.L)},
 $S:372}
 V.rC.prototype={
-ap:function(){return new V.Hf([!1,!1,!1,!1],H.c([],t.Y),H.c(["Pedidos","Mis compras","Direcciones"],t.i),H.c([C.xJ,C.xI,C.xL],t.nD),C.l)}}
+ap:function(){return new V.Hf([!1,!1,!1],H.c([],t.Y),H.c(["Pedidos","Mis compras","Direcciones"],t.i),H.c([C.xJ,C.xI,C.xL],t.nD),C.l)}}
 V.Hf.prototype={
 Kx:function(){var s,r,q,p,o,n,m,l=this,k=null,j=l.e
 C.b.sl(j,0)
