@@ -30,27 +30,25 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
-      });
-    }
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+<script>
+    // TODO: Replace the following with your app's Firebase project configuration.
+    // See: https://support.google.com/firebase/answer/7015592
+    var firebaseConfig = {
+      apiKey: "AIzaSyDOQBTaXDYHEu6WnOhK53sUKlojWYr3B4c",
+      authDomain: "tienda-web-fis.firebaseapp.com",
+      databaseURL: "https://tienda-web-fis-default-rtdb.firebaseio.com",
+      projectId: "tienda-web-fis",
+      storageBucket: "tienda-web-fis.appspot.com",
+      messagingSenderId: "142615677145",
+      appId: "1:142615677145:web:b1840eb3e9a0ed586d56c8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
   </script>
-  <script src="main.dart.js" type="application/javascript"></script>
-  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
-  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  <script src="/__/firebase/8.2.3/firebase-app.js"></script>
-
-  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-  <script src="/__/firebase/8.2.3/firebase-analytics.js"></script>
-
-  <!-- Add Firebase products that you want to use -->
-  <script src="/__/firebase/8.2.3/firebase-auth.js"></script>
-  <script src="/__/firebase/8.2.3/firebase-firestore.js"></script>
+<script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
